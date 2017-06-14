@@ -1,1 +1,0 @@
-# nknavkal.github.io
