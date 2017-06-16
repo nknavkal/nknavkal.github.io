@@ -1,0 +1,55 @@
+.linkIcon{
+	border-radius: 20%;
+	text-decoration: none;
+	margin: 1%;
+}
+
+#navigationBar{
+	top: 0px;
+	width:100%;
+	background: orange;
+	position: fixed;
+	opacity: .85;
+	padding: auto;
+	margin:auto;
+}
+#navigationBar a {
+	text-decoration: none;
+	color: black
+}
+#navigationBar a:hover {
+	color: white;
+}
+
+ul {
+	padding:0;
+}
+
+li {
+	display: inline-block;
+	padding: .5% 2% .5% 2%;
+	font-family: HelveticaNeue;
+	font-size: 120%;
+	letter-spacing: 2px;
+
+}
+body {
+	margin: 0;
+}
+#profile {
+	padding: 8% 0% 0% 0%;
+}
+#profile > img {
+	border-radius: 50%;
+	border: 3px solid white;
+}
+#name {
+	font-family: HelveticaNeue;
+	color: white;
+	font-size: 300%;
+	letter-spacing: 10px;
+	margin: 2%;
+}
+#footer {
+	bottom: 0px;
+}
