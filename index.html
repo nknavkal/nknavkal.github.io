@@ -39,7 +39,18 @@
   js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9&appId=222799264896491";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-	<!--<img src="http://www.planwallpaper.com/static/images/6909249-black-hd-background.jpg" style="width:100%;height:100%;">-->
+
+<fb:login-button
+  scope="public_profile,email"
+  onlogin="checkLoginState();">
+</fb:login-button>
+
+<script> 
+function checkLoginState() {
+  FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+  });
+} </script>
 	<div id="navigationBar" align="center">
 		<ul>
 			<li>
