@@ -51,10 +51,12 @@ body {
 	margin: 2%;
 }
 #footer {
-	bottom: 10px;
+	bottom: 0px;
+	text-decoration: none;
 }
 
 .fb-login-button {
+	position: fixed;
 	display: inline-block;
 	width: 100%;
 	bottom: 0px;
