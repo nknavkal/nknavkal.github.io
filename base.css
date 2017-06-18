@@ -1,6 +1,5 @@
 .linkIcon{
 	border-radius: 20%;
-	text-decoration: none;
 	margin: 1%;
 }
 
@@ -54,7 +53,7 @@ body {
 	bottom: 0px;
 	text-decoration: none;
 }
-#footer > p {
+#footer > a {
 	text-decoration: none;
 }
 
