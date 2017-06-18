@@ -20,6 +20,7 @@
     FB.AppEvents.logPageView();   
   };
 
+
   (function(d, s, id){
      var js, fjs = d.getElementsByTagName(s)[0];
      if (d.getElementById(id)) {return;}
@@ -29,16 +30,6 @@
    }(document, 'script', 'facebook-jssdk'));
 </script>
 
-<!-- login button -->
-
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9&appId=222799264896491";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
 
 <!-- At some point, put some sort of notifier on this so you can see if the script is actually running-->
 <script> 
@@ -47,6 +38,19 @@ function checkLoginState() {
     statusChangeCallback(response);
   });
 } </script>
+
+<script> 
+function statusChangeCallback(response) {
+	if (response.status === 'connected') {
+		console.log("Connected");
+	} else if (response.status === 'not_authorized') {
+		console.log("not_authorized");
+	} else {
+		console.log("not logged in");
+	}
+}
+</script>
+
 	<div id="navigationBar" align="center">
 		<ul>
 			<li>
